@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toddler Learning Fun</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#alphabet">ABCs</a></li>
+      <li><a href="#rhymes">Nursery Rhymes</a></li>
+      <li><a href="#numbers">Numbers</a></li>
+      <li><a href="#calculations">Basic Calculations</a></li>
+      <li><a href="#prayers">Prayers</a></li>
+      <li><a href="#animals">Animals</a></li>
+      <li><a href="#plants">Plants</a></li>
+      <li><a href="#fruits">Fruits</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#weekdays">Weekdays</a></li>
+      <li><a href="#months">Months</a></li>
+    </ul>
+  </nav>
+
+  <!-- Alphabet Section -->
+  <section id="alphabet">
+    <h2>Alphabet (ABCs)</h2>
+    <p>Let's learn the alphabet! Here are the letters A to Z:</p>
+    <div class="alphabet">
+      <span class="letter">A</span>
+      <span class="letter">B</span>
+      <span class="letter">C</span>
+      <span class="letter">D</span>
+      <span class="letter">E</span>
+      <span class="letter">F</span>
+      <span class="letter">G</span>
+      <span class="letter">H</span>
+      <span class="letter">I</span>
+      <span class="letter">J</span>
+      <span class="letter">K</span>
+      <span class="letter">L</span>
+      <span class="letter">M</span>
+      <span class="letter">N</span>
+      <span class="letter">O</span>
+      <span class="letter">P</span>
+      <span class="letter">Q</span>
+      <span class="letter">R</span>
+      <span class="letter">S</span>
+      <span class="letter">T</span>
+      <span class="letter">U</span>
+      <span class="letter">V</span>
+      <span class="letter">W</span>
+      <span class="letter">X</span>
+      <span class="letter">Y</span>
+      <span class="letter">Z</span>
+    </div>
+    <p>Now I know my ABCs!</p>
+  </section>
+
+  <!-- Nursery Rhymes Section -->
+  <section id="rhymes">
+    <h2>Nursery Rhymes</h2>
+    <p><strong>Twinkle, Twinkle, Little Star</strong><br>
+       Twinkle, twinkle, little star,<br>
+       How I wonder what you are!<br>
+       Up above the world so high,<br>
+       Like a diamond in the sky.<br>
+       Twinkle, twinkle, little star,<br>
+       How I wonder what you are!</p>
+    <p><strong>Baa, Baa, Black Sheep</strong><br>
+       Baa, baa, black sheep, have you any wool?<br>
+       Yes sir, yes sir, three bags full!<br>
+       One for the master, one for the dame,<br>
+       And one for the little boy who lives down the lane.</p>
+  </section>
+
+  <!-- Numbers Section -->
+  <section id="numbers">
+    <h2>Numbers</h2>
+    <p>Let's count from 1 to 10:</p>
+    <ul class="numbers">
+      <li>1 - One &#9733;</li>
+      <li>2 - Two &#9733;&#9733;</li>
+      <li>3 - Three &#9733;&#9733;&#9733;</li>
+      <li>4 - Four &#9733;&#9733;&#9733;&#9733;</li>
+      <li>5 - Five &#9733;&#9733;&#9733;&#9733;&#9733;</li>
+      <li>6 - Six &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+      <li>7 - Seven &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+      <li>8 - Eight &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+      <li>9 - Nine &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+      <li>10 - Ten &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+    </ul>
+  </section>
+
+  <!-- Basic Calculations Section -->
+  <section id="calculations">
+    <h2>Basic Calculations</h2>
+    <p>Let's practice adding and subtracting:</p>
+    <div class="calc-box">
+      <p><strong>Addition:</strong> What is 2 + 3? 
+        <input type="number" id="addAnswer" aria-label="Addition answer">
+        <button onclick="checkAddition()">Check</button>
+      </p>
+      <p id="addFeedback" class="feedback"></p>
+    </div>
+    <div class="calc-box">
+      <p><strong>Subtraction:</strong> What is 7 - 4? 
+        <input type="number" id="subAnswer" aria-label="Subtraction answer">
+        <button onclick="checkSubtraction()">Check</button>
+      </p>
+      <p id="subFeedback" class="feedback"></p>
+    </div>
+  </section>
+
+  <!-- Prayers Section -->
+  <section id="prayers">
+    <h2>Prayers</h2>
+    <p><strong>Thank You</strong><br>
+       Thank you for the world so sweet,<br>
+       Thank you for the food we eat,<br>
+       Thank you for the birds that sing,<br>
+       Thank you, God, for everything!</p>
+    <p><strong>God is Great (Meal Prayer)</strong><br>
+       God is great, God is good,<br>
+       Let us thank Him for our food.<br>
+       By His hands we all are fed,<br>
+       Give us Lord our daily bread. Amen.</p>
+  </section>
+
+  <!-- Animals Gallery Section -->
+  <section id="animals">
+    <h2>Animals</h2>
+    <p>Some familiar animals:</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Cat" alt="Cat">
+        <figcaption>Cat</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Dog" alt="Dog">
+        <figcaption>Dog</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Elephant" alt="Elephant">
+        <figcaption>Elephant</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Plants Gallery Section -->
+  <section id="plants">
+    <h2>Plants</h2>
+    <p>Different kinds of plants:</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Tree" alt="Tree">
+        <figcaption>Tree</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Flower" alt="Flower">
+        <figcaption>Flower</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Cactus" alt="Cactus">
+        <figcaption>Cactus</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Fruits Gallery Section -->
+  <section id="fruits">
+    <h2>Fruits</h2>
+    <p>Yummy fruits to eat:</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Apple" alt="Apple">
+        <figcaption>Apple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Banana" alt="Banana">
+        <figcaption>Banana</figcaption>
+      </figure>
+      <figure>
+        <img src="https://via.placeholder.com/200?text=Cherry" alt="Cherry">
+        <figcaption>Cherry</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Colors Gallery Section -->
+  <section id="colors">
+    <h2>Colors</h2>
+    <p>Let's learn colors:</p>
+    <div class="gallery">
+      <figure>
+        <div class="color-swatch" style="background: red;"></div>
+        <figcaption>Red</figcaption>
+      </figure>
+      <figure>
+        <div class="color-swatch" style="background: blue;"></div>
+        <figcaption>Blue</figcaption>
+      </figure>
+      <figure>
+        <div class="color-swatch" style="background: green;"></div>
+        <figcaption>Green</figcaption>
+      </figure>
+      <figure>
+        <div class="color-swatch" style="background: yellow;"></div>
+        <figcaption>Yellow</figcaption>
+      </figure>
+      <figure>
+        <div class="color-swatch" style="background: orange;"></div>
+        <figcaption>Orange</figcaption>
+      </figure>
+      <figure>
+        <div class="color-swatch" style="background: purple;"></div>
+        <figcaption>Purple</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Weekdays Section -->
+  <section id="weekdays">
+    <h2>Weekdays</h2>
+    <p>The days of the week are:</p>
+    <ul class="days">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+      <li>Sunday</li>
+    </ul>
+  </section>
+
+  <!-- Months Section -->
+  <section id="months">
+    <h2>Months</h2>
+    <p>The months of the year are:</p>
+    <ol class="months">
+      <li>January</li>
+      <li>February</li>
+      <li>March</li>
+      <li>April</li>
+      <li>May</li>
+      <li>June</li>
+      <li>July</li>
+      <li>August</li>
+      <li>September</li>
+      <li>October</li>
+      <li>November</li>
+      <li>December</li>
+    </ol>
+  </section>
+
+  <!-- Smooth Scroll and Interactive Script -->
+  <script src="Script.js"></script>
+</body>
+</html>
