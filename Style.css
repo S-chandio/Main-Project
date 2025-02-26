@@ -1,0 +1,189 @@
+/* Base Styles */
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background: #f0f9ff;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background: #58CFFB; /* bright blue */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar li {
+    margin: 5px 10px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .navbar a:hover {
+    background: #ffdede;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 40px 20px;
+    scroll-margin-top: 70px;
+  }
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  
+  /* Alphabet Section */
+  .alphabet {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .alphabet .letter {
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.2em;
+    transition: transform 0.3s;
+  }
+  .alphabet .letter:nth-child(4n+1) { color: #e91e63; } /* pink/red */
+  .alphabet .letter:nth-child(4n+2) { color: #2196f3; } /* blue */
+  .alphabet .letter:nth-child(4n+3) { color: #4caf50; } /* green */
+  .alphabet .letter:nth-child(4n+4) { color: #ff9800; } /* orange */
+  .alphabet .letter:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Nursery Rhymes & Prayers section content */
+  section p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  section p strong {
+    font-size: 1.1em;
+  }
+  section#rhymes p, section#prayers p {
+    margin-bottom: 1em;
+  }
+  
+  /* Numbers Section */
+  .numbers {
+    list-style: none;
+    padding: 0;
+  }
+  .numbers li {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  
+  /* Calculations Section */
+  .calc-box {
+    margin: 10px 0;
+  }
+  .calc-box input {
+    font-size: 1em;
+    padding: 2px 5px;
+    width: 60px;
+  }
+  .calc-box button {
+    font-size: 1em;
+    padding: 3px 8px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .feedback {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .feedback.correct { color: green; }
+  .feedback.wrong { color: red; }
+  
+  /* Gallery Sections (Animals, Plants, Fruits, Colors) */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gallery figure {
+    margin: 0;
+    text-align: center;
+  }
+  .gallery img, .gallery .color-swatch {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .gallery img:hover, .gallery .color-swatch:hover {
+    transform: scale(1.1);
+  }
+  .gallery figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  /* Colors specific */
+  .color-swatch {
+    display: inline-block;
+  }
+  
+  /* Days and Months */
+  .days {
+    list-style: none;
+    padding: 0;
+    font-size: 1.3em;
+  }
+  .days li {
+    margin: 3px 0;
+  }
+  .months {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0 0 0 1.5em; /* indent for numbers if any */
+  }
+  .months li {
+    margin: 3px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .navbar a {
+      font-size: 1em;
+      padding: 6px 8px;
+    }
+    .alphabet .letter {
+      font-size: 2em;
+    }
+    .gallery {
+      gap: 10px;
+    }
+    .gallery img, .gallery .color-swatch {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
